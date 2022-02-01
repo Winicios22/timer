@@ -26,3 +26,14 @@ footer{
 div{
     padding: 10px;
 }
+
+.contador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: flex;
+}
+
+small{
+    padding-left: 10px;
+}
