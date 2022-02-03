@@ -12,14 +12,10 @@
         <h1>Temporizador</h1>
     </header>
     <section>
-        <div class="data">
-            <small>Dia</small>
-            <select name="" id="dia"></select>
-            <small>Mês</small>
-            <select name="" id="mes"></select>
-            <small>Ano</small>
-            <input type="number" id="ano" >
-            <input type="button" value="Calcular">
+        <div>
+            <label for="data">Digite data e hora:</label>
+            <input type="datetime-local" name="data" id="data">
+            <input type="button" value="Calcular" onclick="calcular()">
         </div>
 
         <div class="contador">
