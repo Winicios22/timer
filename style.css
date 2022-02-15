@@ -47,3 +47,7 @@ small{
     align-items: center;
     justify-content: center;
 }
+
+#res{
+    text-align: center;
+}

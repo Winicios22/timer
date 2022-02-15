@@ -2,12 +2,18 @@ var teDia = document.querySelector("#dias")
 var teHora = document.querySelector("#horas")
 var teMinuto = document.querySelector("#minutos")
 var teSegundo = document.querySelector("#segundos")
+var campoTarefa = document.querySelector("#tarefa")
+var lenbreteTarefa = document.querySelector("#res")
+var lenbreteData = document.querySelector("#dataTarefa")
 
 function calcular(){
 
     var data = document.querySelector("#data").value
     var fdata = new Date(data)
     alert(fdata)
+
+    lenbreteTarefa.innerHTML = campoTarefa.value
+    lenbreteData.innerHTML = data 
 
     var atualizar = () =>{
         var tempoAtual = new Date()

@@ -15,9 +15,12 @@
         <div>
             <label for="data">Digite data e hora:</label>
             <input type="datetime-local" name="data" id="data">
-            <input type="button" value="Calcular" onclick="calcular()">
         </div>
-
+        <div>
+            <label for="tarefa">Digite a tarefa:</label>
+            <input type="text" name="tarefa" id="tarefa">
+        <input type="button" value="Calcular" onclick="calcular()">
+        </div>
         <div class="contador">
         <div class="contador">
             <h2 id="dias">00</h2>  
@@ -35,6 +38,11 @@
             <h2 id="segundos">00</h2>
             <small>Segundos</small>
         </div>
+        </div>
+        <div id="dataTarefa">
+
+        </div>
+        <div id="res">
         </div>
     </section>
     <script src="script.js"></script>
