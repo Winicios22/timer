@@ -10,12 +10,13 @@ function calcular(){
 
     var data = document.querySelector("#data").value
     var fdata = new Date(data)
-    alert(fdata)
-
+    let dataAtual = new Date()
+    
+    fdata < dataAtual ? checar() : 
+    data == "" ? checar() : 
     lenbreteTarefa.innerHTML = campoTarefa.value
-    lenbreteData.innerHTML = data 
-
-    var atualizar = () =>{
+    
+    const atualizar = () =>{
         var tempoAtual = new Date()
         var disferencaTempo = fdata - tempoAtual
         var dias = Math.floor(disferencaTempo / 1000 / 60 / 60 / 24)
@@ -32,4 +33,12 @@ function calcular(){
     }
 
     setInterval(atualizar, 1000)
+
+}
+
+var resetContador = () => {document.location.reload()}
+
+var checar = () => {
+    alert("Insira uma data valida: datas anteriores a data prezente não são validas")
+    document.location.reload()
 }
