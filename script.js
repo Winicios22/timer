@@ -5,15 +5,20 @@ var teSegundo = document.querySelector("#segundos")
 var campoTarefa = document.querySelector("#tarefa")
 var lenbreteTarefa = document.querySelector("#res")
 var lenbreteData = document.querySelector("#dataTarefa")
+var botao = document.querySelector(".botao") 
 
 function calcular(){
 
     var data = document.querySelector("#data").value
-    var fdata = new Date(data)
+    const fdata = new Date(data)
     let dataAtual = new Date()
     
-    fdata < dataAtual ? checar() : 
-    data == "" ? checar() : 
+    if(fdata < dataAtual || data == ""){
+        checar()
+    }
+
+    confBotao()
+    
     lenbreteTarefa.innerHTML = campoTarefa.value
     
     const atualizar = () =>{
@@ -28,8 +33,6 @@ function calcular(){
         teMinuto.textContent = minutos < 10 ? "0" + minutos : minutos
         teHora.textContent = horas < 10 ? "0" + horas : horas
         teDia.textContent = dias < 10 ? "0" + dias : dias
-    
-        console.log({dias,horas,minutos,segundos})
     }
 
     setInterval(atualizar, 1000)
@@ -42,3 +45,8 @@ var checar = () => {
     alert("Insira uma data valida: datas anteriores a data prezente não são validas")
     document.location.reload()
 }
+
+function confBotao(){
+    botao.disabled = true
+}
+
