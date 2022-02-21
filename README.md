@@ -1,2 +1,2 @@
 # timer
-Feito para praticar javascript, html e css
+Criei esse projeto para aprender Java Script, CSS e HTML
