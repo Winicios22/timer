@@ -18,7 +18,7 @@ function calcular(){
     }
 
     confBotao()
-    
+
     lenbreteTarefa.innerHTML = campoTarefa.value
     
     const atualizar = () =>{
@@ -42,7 +42,7 @@ function calcular(){
 var resetContador = () => {document.location.reload()}
 
 var checar = () => {
-    alert("Insira uma data valida: datas anteriores a data prezente não são validas")
+    alert("Insira uma data valida: datas anteriores a data presente não são validas")
     document.location.reload()
 }
 
